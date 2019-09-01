@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 40px;
+    font-family: Lato;
+    font-weight: 100;
+    background: url(https://wallpaperbro.com/img/420200.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    color: #666;
+}
+
+button {
+    width: 200px;
+    color: #555;
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 100;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { 
+    font-weight: 300; 
+}
+
+button:hover i { 
+    margin-right: 20px; 
+}
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: rgb(46, 127, 173);
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.panel {
+    width: 50%;
+    float: left;
+    height: 400px;
+    padding: 50px;
+}
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    position: relative;
+    color: #666;
+}
+
+.player-score {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(46, 127, 173);
+    position: relative;
+}
+
+.active {
+    background-color: #ddd;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.current-box {
+    background: rgb(46, 127, 173);
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.current-score {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.current-label {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.animate {
+    animation: spin .5s linear;
+}
+
+@keyframes spin { 
+    from {
+        transform: rotate(0deg);
+    } to { 
+        transform:rotate(360deg);
+    } 
+}
+
+.btn {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.alert {
+    width: 1000px;
+    background: rgb(46, 127, 173);
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: auto;
+}
+
+.dice1 {
+    position: absolute;
+    left: 50%;
+    top: 290px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10);
+}
+
+.dice2 {
+    position: absolute;
+    left: 50%;
+    top: 410px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10);
+}
+
+.winner {
+    color: rgb(46, 127, 173);
+    text-transform: uppercase;
+}
